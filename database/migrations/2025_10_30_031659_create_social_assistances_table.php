@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->enum('category', ['staple', 'cash', 'subsidized fuel', 'health']);
             $table->decimal('amount', 10, 2);
-            $table->sting('provider');
+            $table->string('provider');
             $table->longText('description');
             $table->boolean('is_available')->default(true);
             $table->softDeletes();
